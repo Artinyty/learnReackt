@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import DialogItems from './DialogItems/DialogItems';
 import Messege from './Messege/Messege';
-import { sendMessegeCreator, updateNewMessegeBodyCreator } from '../../Redux/state';
+import { sendMessegeCreator, updateNewMessegeBodyCreator } from '../../Redux/dialogs-reducer';
 
 const Dialogs = (props) => {
   let state = props.store.getState().dialogsPage;

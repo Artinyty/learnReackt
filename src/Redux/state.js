@@ -2,14 +2,8 @@ import dialogsReducer from "./dialogs-reducer";
 import profileReducer from "./profile-reducer";
 import sidebarReducer from "./sidebar-reducer";
 
-const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
-const ADD_POST = 'ADD-POST';
-const UPDATE_NEW_MSG_BODY = 'UPDATE-NEW-MSG-BODY';
-const SEND_MESSAGER = 'SEND-MESSAGER';
-
 let store = {
   _state: {
-
     profilePage: {
       newPostText: 'it-kamasutra',
       posts: [
@@ -60,12 +54,10 @@ let store = {
     this._callSubscriber(this._state);
   }
 };
-export const addPostActionCreator = () => ({ type: ADD_POST });
-export const updateNewPostTextActionCreator = (text) => ({ type: UPDATE_NEW_POST_TEXT, newText: text });
-;
 
-export const sendMessegeCreator = () => ({ type: SEND_MESSAGER });
-export const updateNewMessegeBodyCreator = (body) => ({ type: UPDATE_NEW_MSG_BODY, body: body });
+
+
+
 
 export default store;
 window.Storage = store;
