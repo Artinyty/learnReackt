@@ -2,10 +2,7 @@ import dialogsReducer from "./dialogs-reducer";
 import profileReducer from "./profile-reducer";
 import sidebarReducer from "./sidebar-reducer";
 
-
-
 let store = {
-
 
   getState() {
     return this._state;
@@ -29,10 +26,10 @@ let store = {
 
 
 
-
+window.Storage = store;
 
 export default store;
-window.Storage = store;
+
 
 
 

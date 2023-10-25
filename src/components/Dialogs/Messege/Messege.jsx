@@ -9,8 +9,6 @@ const Messege = (props) => {
   return (
     <div>
       <div className={s.dialoges}>{props.message}
-
-
       </div>
 
     </div>
